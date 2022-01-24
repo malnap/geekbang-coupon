@@ -9,7 +9,9 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
-// 试算最优的优惠券
+/**
+ * 试算最优的优惠券
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

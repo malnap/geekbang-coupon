@@ -22,6 +22,12 @@ public enum CouponType {
     // 存在数据库里的最终code
     private String code;
 
+    /**
+     * 根据优惠券的编码返回对应的枚举对象
+     *
+     * @param code
+     * @return
+     */
     public static CouponType convert(String code) {
         return Stream.of(values())
                 .filter(couponType -> couponType.code.equalsIgnoreCase(code))

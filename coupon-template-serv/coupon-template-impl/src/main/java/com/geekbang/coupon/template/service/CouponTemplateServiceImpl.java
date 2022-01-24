@@ -132,7 +132,11 @@ public class CouponTemplateServiceImpl implements CouponTemplateService {
         return template.map(CouponTemplateConverter::convertToTemplateInfo).orElse(null);
     }
 
-    // 将券无效化
+    /**
+     * 将券无效化
+     *
+     * @param id
+     */
     @Override
     @Transactional
     public void deleteTemplate(Long id) {
@@ -147,11 +151,8 @@ public class CouponTemplateServiceImpl implements CouponTemplateService {
      */
     @Override
     public Map<Long, CouponTemplateInfo> getTemplateInfoMap(Collection<Long> ids) {
-
         List<com.geekbang.coupon.template.dao.entity.CouponTemplate> templates = templateDao.findAllById(ids);
-
-        return templates.stream()
-                .map(CouponTemplateConverter::convertToTemplateInfo)
+        return templates.stream().map(CouponTemplateConverter::convertToTemplateInfo)
                 .collect(Collectors.toMap(CouponTemplateInfo::getId, Function.identity()));
     }
 

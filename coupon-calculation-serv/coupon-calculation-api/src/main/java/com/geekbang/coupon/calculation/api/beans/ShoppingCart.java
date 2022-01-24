@@ -9,7 +9,9 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
-// 封装了订单信心
+/**
+ * 封装了订单信息
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -22,8 +24,7 @@ public class ShoppingCart {
 
     private long cost;
 
-    // 目前只支持单张优惠券
-    // 但是为了以后的扩展考虑，你可以添加多个优惠券的计算逻辑
+    // 目前只支持单张优惠券，但是为了以后的扩展考虑，你可以添加多个优惠券的计算逻辑
     private List<CouponInfo> couponInfos;
 
     @NotNull

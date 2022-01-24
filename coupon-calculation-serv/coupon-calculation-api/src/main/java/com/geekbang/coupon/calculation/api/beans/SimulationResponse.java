@@ -11,7 +11,7 @@ import java.util.Map;
 @NoArgsConstructor
 public class SimulationResponse {
 
-    // 最省钱的coupon
+    // 最省钱的coupon id
     private Long bestCouponId;
 
     // 每一个coupon对应的order价格

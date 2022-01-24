@@ -1,6 +1,5 @@
 package com.geekbang.coupon.calculation.template;
 
-
 import com.geekbang.coupon.calculation.api.beans.ShoppingCart;
 import com.geekbang.coupon.calculation.api.beans.Product;
 import com.geekbang.coupon.template.api.beans.CouponTemplateInfo;

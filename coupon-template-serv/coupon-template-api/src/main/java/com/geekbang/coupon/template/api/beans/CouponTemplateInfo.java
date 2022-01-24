@@ -8,10 +8,8 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotNull;
 
-//import javax.validation.constraints.NotNull;
-
 /**
- * 创建优惠券模板
+ * 优惠券模板信息
  */
 @Data
 @NoArgsConstructor
@@ -21,18 +19,19 @@ public class CouponTemplateInfo {
 
     private Long id;
 
+    /** 优惠券名称 */
     @NotNull
     private String name;
 
-    // 优惠券描述
+    /** 优惠券描述 */
     @NotNull
     private String desc;
 
-    // 优惠券类型
+    /** 优惠券类型，引用CouponType里的code */
     @NotNull
     private String type;
 
-    // 适用门店 - 若无则为全店通用券
+    /** 优惠券适用门店，若无则为全店通用券 */
     private Long shopId;
 
     /** 优惠券规则 */

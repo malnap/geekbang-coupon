@@ -1,14 +1,9 @@
 package com.geekbang.coupon.template.api.beans;
 
-import com.geekbang.coupon.template.api.beans.rules.TemplateRule;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.validation.constraints.NotNull;
-
-//import javax.validation.constraints.NotNull;
 
 /**
  * 创建优惠券模板
